@@ -1,0 +1,24 @@
+int init()
+  {
+   if((Digits == 3) || (Digits == 5)) {
+      TP *= 10;SL *= 10;delta *= 10;}
+   return(0);
+  }
+//============= направление =
+
+//============= Старт =======
+void OnTick()
+  {
+      double max_lot = SymbolInfoDouble(Symbol(),SYMBOL_VOLUME_MAX);
+      double min_lot = SymbolInfoDouble(Symbol(),SYMBOL_VOLUME_MIN);
+      if(lot<min_lot)
+         lot=min_lot;
+      double high1 = iHigh(_Symbol, PERIOD_D1, 1),low1 = iLow(_Symbol, PERIOD_D1, 1);
+      ticket=0;
+      Count();
+      if((Hour()>hour1) && (Hour()<hour2) && Count[0]==0 && MathAbs(high1-Ask)<delta*Point)
+         ticket = OrderSet(0, lot, Ask, slippage, SL, TP,"",MN,0,Blue);
+      if((Hour()>hour1) && (Hour()<hour2) && Count[1]==0 && MathAbs(low1-Bid)<delta*Point)
+         ticket = OrderSet(1, lot, Bid, slippage, SL,TP,"",MN,0,Red);
+  }
+//+------------------------------------------------------------------+
