@@ -1,0 +1,19 @@
+#property strict
+//---
+#define CHKSYMBOL            (OrderSymbol()==Symbol())
+#define CHKMAGIC(x)          (OrderMagicNumber()==x)
+#define CHKSM(x)             (CHKSYMBOL && CHKMAGIC(x))
+
+input int hour1 = 8;
+input int hour2 = 23;
+extern int    delta = 20;
+extern int    TP = 20;
+extern int    SL = 20;
+extern int     MN = 12345;
+int slippage=30;
+double LastOrder[2];
+
+extern double lot = 0.01;
+
+int total, ticket;
+int Count[2];
