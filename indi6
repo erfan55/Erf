@@ -4,11 +4,11 @@
 #define CHKMAGIC(x)          (OrderMagicNumber()==x)
 #define CHKSM(x)             (CHKSYMBOL && CHKMAGIC(x))
 
-input int hour1 = 8;
-input int hour2 = 23;
-extern int    delta = 20;
-extern int    TP = 20;
-extern int    SL = 20;
+input int hour1 = 18;
+input int hour2 = 24;
+extern int    delta = 27;
+extern int    TP = 50;
+extern int    SL = 30;
 extern int     MN = 12345;
 int slippage=30;
 double LastOrder[2];
