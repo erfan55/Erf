@@ -1,0 +1,19 @@
+property copyright "Griffinssoul"
+#property link      "http://www.forexfactory.com/griffinssoul"
+#property version   "3.00"
+#property strict
+#property indicator_chart_window
+
+//
+#property description "Griffinssoul 28022016 - added 78.6 fib-pivot and price to lines."
+#property description "Griffinssoul 28022016 - added long and short horizontal lines."
+#property description "Nico Scholtz 19092016 - fixed bug in manual pivot calculation."
+//string endofpivot1=TimeToStr(iTime(0,PERIOD_D1,1),TIME_DATE);
+//string startofpivot=TimeToStr(iTime(0,PERIOD_D1,2),TIME_DATE);
+extern bool autoTimeAdjustment =true;
+extern int timeZoneOfData= -5;//TimeZoneOfData(NewYork GMT)
+extern bool brokercandle=true;//Broker's Candle
+extern datetime startofpivot=D'2016.09.12 07:00';//Choose H1 Start Candle
+extern datetime endofpivot=D'2016.09.19 06:00';//Choose H1 Finish Candle
+extern bool StartEndLines=true;//Display Start and End lines for manual settings
+extern string  comment1="Choose the TF ";
