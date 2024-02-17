@@ -1,7 +1,7 @@
 
 #property copyright "Copyright @ BestTraderEv"
 #property link      "https://www.forexfactory.com/besttraderev"
-#property version   "1.00"
+#property version   "2.00"
 #property strict
 #property indicator_chart_window
 
@@ -32,15 +32,15 @@ int OnCalculate(const int rates_total,
                 const int &spread[])
   {
 //---
-                double Ema10_M1 = iMA(_Symbol,PERIOD_M1,10,0,MODE_EMA,PRICE_CLOSE,1);
-                double Ema10_M5 = iMA(_Symbol,PERIOD_M5,10,0,MODE_EMA,PRICE_CLOSE,1);
+                double Ema10_M1 = iMA(_Symbol,PERIOD_M1,20,0,MODE_EMA,PRICE_CLOSE,1);
+                double Ema10_M5 = iMA(_Symbol,PERIOD_M5,20,0,MODE_EMA,PRICE_CLOSE,2);
                 
                if(IsNewBar(PERIOD_M1))
                 { 
                 if(Bid>Ema10_M1&&
-                   iClose(_Symbol,PERIOD_M1,2)<iOpen(_Symbol,PERIOD_M1,2)&&
-                   iClose(_Symbol,PERIOD_M1,1)>iOpen(_Symbol,PERIOD_M1,1)&&
-                   iLow(_Symbol,PERIOD_M1,1)<iLow(_Symbol,PERIOD_M1,2)&&
+                   iClose(_Symbol,PERIOD_M1,2)<iOpen(_Symbol,PERIOD_M5,2)&&
+                   iClose(_Symbol,PERIOD_M1,1)>iOpen(_Symbol,PERIOD_M5,1)&&
+                   iLow(_Symbol,PERIOD_M1,1)<iLow(_Symbol,PERIOD_M5,2)&&
                    iClose(_Symbol,PERIOD_M1,1)>iClose(_Symbol,PERIOD_M1,2))
                  {
                  if(alertsMessage)
