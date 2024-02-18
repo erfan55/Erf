@@ -1,10 +1,13 @@
 extern string TimeFrame = "current time frame";
-extern int SmoothPeriod = 5;
-extern int SmoothPhase = 0;
+extern int SmoothPeriod = 15;
+extern int SmoothPhase = 10;
 extern bool alertsOn = FALSE;
 extern bool alertsOnCurrent = FALSE;
 extern bool alertsMessage = FALSE;
 extern bool alertsSound = FALSE;
+extern bool alertsEmail = FALSE;
+extern bool alertsMessage = true;
+extern bool alertsSound = true;
 extern bool alertsEmail = FALSE;
 double g_ibuf_112[];
 double g_ibuf_116[];
