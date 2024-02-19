@@ -1,11 +1,11 @@
 
 #property copyright "Copyright @ BestTraderEv"
-#property link      "https://www.forexfactory.com/besttraderev"
+#property link     
 #property version   "2.00"
 #property strict
 #property indicator_chart_window
 
-input bool            alertsMessage    = true;            // Alerts should show pop-up message
+input bool            alertsMessage    = false;            // Alerts should show pop-up message
 input bool            alertsPushNotif  = false;           // Alerts should send push notification
 //+------------------------------------------------------------------+
 //| Custom indicator initialization function                         |
@@ -65,10 +65,10 @@ int OnCalculate(const int rates_total,
                if(IsNewBar(PERIOD_M5))
                 { 
                 if(Bid>Ema10_M5&&
-                   iClose(_Symbol,PERIOD_M5,2)<iOpen(_Symbol,PERIOD_M5,2)&&
-                   iClose(_Symbol,PERIOD_M5,1)>iOpen(_Symbol,PERIOD_M5,1)&&
-                   iLow(_Symbol,PERIOD_M5,1)<iLow(_Symbol,PERIOD_M5,2)&&
-                   iClose(_Symbol,PERIOD_M5,1)>iClose(_Symbol,PERIOD_M5,2))
+                   iClose(_Symbol,PERIOD_M15,2)<iOpen(_Symbol,PERIOD_M15,2)&&
+                   iClose(_Symbol,PERIOD_M15,1)>iOpen(_Symbol,PERIOD_M15,1)&&
+                   iLow(_Symbol,PERIOD_M15,1)<iLow(_Symbol,PERIOD_M15,2)&&
+                   iClose(_Symbol,PERIOD_M15,1)>iClose(_Symbol,PERIOD_M5,2))
                  {
                  if(alertsMessage)
                  Alert(_Symbol+" M5 Usmanshafeen_Alert Buy setup!");
