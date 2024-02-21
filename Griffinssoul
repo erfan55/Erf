@@ -8,6 +8,12 @@ property copyright "Griffinssoul"
 #property description "Griffinssoul 28022016 - added 78.6 fib-pivot and price to lines."
 #property description "Griffinssoul 28022016 - added long and short horizontal lines."
 #property description "Nico Scholtz 19092016 - fixed bug in manual pivot calculation."
+#property description "Griffinssoul 28022016 - added 78.6 fib-pivot and price to lines."
+#property description "Griffinssoul 28022016 - added long and short horizontal lines."
+#property description "Nico Scholtz 19092016 - fixed bug in manual pivot calculation."
+#property description "Griffinssoul 28022016 - added 78.6 fib-pivot and price to lines."
+#property description "Griffinssoul 28022016 - added long and short horizontal lines."
+#property description "Nico Scholtz 19092016 - fixed bug in manual pivot calculation."
 //string endofpivot1=TimeToStr(iTime(0,PERIOD_D1,1),TIME_DATE);
 //string startofpivot=TimeToStr(iTime(0,PERIOD_D1,2),TIME_DATE);
 extern bool autoTimeAdjustment =true;
