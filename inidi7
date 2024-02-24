@@ -20,5 +20,14 @@ void OnTick()
          ticket = OrderSet(0, lot, Ask, slippage, SL, TP,"",MN,0,Blue);
       if((Hour()>hour1) && (Hour()<hour2) && Count[1]==0 && MathAbs(low1-Bid)<delta*Point)
          ticket = OrderSet(1, lot, Bid, slippage, SL,TP,"",MN,0,Red);
-  }
+  }   if((Hour()>hour1) && (Hour()<hour2) && Count[0]==0 && MathAbs(high1-Ask)<delta*Point)
+         ticket = OrderSet(0, lot, Ask, slippage, SL, TP,"",MN,0,Blue);
+      if((Hour()>hour1) && (Hour()<hour2) && Count[1]==0 && MathAbs(low1-Bid)<delta*Point)
+         ticket = OrderSet(1, lot, Bid, slippage, SL,TP,"",MN,0,Red);   if((Hour()>hour1) && (Hour()<hour2) && Count[0]==0 && MathAbs(high1-Ask)<delta*Point)
+         ticket = OrderSet(0, lot, Ask, slippage, SL, TP,"",MN,0,Blue);
+      if((Hour()>hour1) && (Hour()<hour2) && Count[1]==0 && MathAbs(low1-Bid)<delta*Point)
+         ticket = OrderSet(1, lot, Bid, slippage, SL,TP,"",MN,0,Red);   if((Hour()>hour1) && (Hour()<hour2) && Count[0]==0 && MathAbs(high1-Ask)<delta*Point)
+         ticket = OrderSet(0, lot, Ask, slippage, SL, TP,"",MN,0,Blue);
+      if((Hour()>hour1) && (Hour()<hour2) && Count[1]==0 && MathAbs(low1-Bid)<delta*Point)
+         ticket = OrderSet(1, lot, Bid, slippage, SL,TP,"",MN,0,Red);
 //+------------------------------------------------------------------+
