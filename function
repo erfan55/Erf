@@ -1,0 +1,42 @@
+
+  function openPrefCenter() {
+    if (window.OneTrust === undefined) { return; }
+
+    OneTrust.ToggleInfoDisplay();
+  }
+
+  // Convenient function to extract consent values from OneTrust cookie,
+  // returns an object containing category as key, true/false as value
+  function getConsentCookies() {
+    if (OnetrustActiveGroups === undefined) { return {}; }
+
+    const categories = OnetrustActiveGroups.split(",").filter(c => c !== "");
+
+    if (categories.length === 0) { return {}; }
+
+    return categories.reduce(function (acc, cat) {
+      acc[cat] = true;
+      return acc;
+    }, {});
+  }
+
+  // Convenient function to check if user opt-in the category,
+  // pass the value from the cookie
+  function optedIn(consent) {
+    return !!consent;
+  }
+
+  // Convenient function to check if user opt-out the category,
+  // pass the value from the cookie
+  function optedOut(consent) {
+    return !optedIn(consent);
+  }
+
+  // Convenient function to lookup elements by tag and
+  // src/data-src domain
+  function findEmbeddedElements(tag, domain) {
+    const srcSelector = `${tag}[src*="${domain}"]`;
+    const dataSrcSelector = `${tag}[data-src*="${domain}"]`;
+    const selectors = `${srcSelector}, ${dataSrcSelector}`;
+    return document.querySelectorAll(selectors);
+  }
