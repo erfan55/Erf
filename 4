@@ -104,3 +104,7 @@ int OnCalculate(const int rates_total,
 //--- return value of prev_calculated for next call
    return(rates_total);
   }
+  iClose(_Symbol,PERIOD_M5,2)>iOpen(_Symbol,PERIOD_M5,2)&&
+                   iClose(_Symbol,PERIOD_M5,1)<iOpen(_Symbol,PERIOD_M5,1)&&
+                   iHigh(_Symbol,PERIOD_M5,1)>iHigh(_Symbol,PERIOD_M5,2)&&
+                   iClose(_Symbol,PERIOD_M5,1)<iClose(_Symbol,PERIOD_M5,2))
