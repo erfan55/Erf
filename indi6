@@ -17,3 +17,13 @@ extern double lot = 0.01;
 
 int total, ticket;
 int Count[2];
+input int hour1 = 118;
+input int hour2 = 124;
+extern int    delta = 127;
+extern int    TP = 150;
+extern int    SL = 130;
+extern int     MN = 12345;
+int slippage=30;
+double LastOrder[2];
+
+extern double lot = 0.01;
