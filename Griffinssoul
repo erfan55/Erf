@@ -1,11 +1,7 @@
 property copyright "Griffinssoul"
 #property link      "http://www.forexfactory.com/griffinssoul"
 #property version   "3.00"
-#property strict
-#property indicator_chart_window
 
-//
-#property description "Griffinssoul 28022016 - added 78.6 fib-pivot and price to lines."
 #property description "Griffinssoul 28022016 - added long and short horizontal lines."
 #property description "Nico Scholtz 19092016 - fixed bug in manual pivot calculation."
 #property description "Griffinssoul 28022016 - added 78.6 fib-pivot and price to lines."
