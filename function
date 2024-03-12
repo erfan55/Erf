@@ -10,8 +10,6 @@
   function getConsentCookies() {
     if (OnetrustActiveGroups === undefined) { return {}; }
 
-    const categories = OnetrustActiveGroups.split(",").filter(c => c !== "");
-
     if (categories.length === 0) { return {}; }
 
     return categories.reduce(function (acc, cat) {
