@@ -1,6 +1,4 @@
 
-  function openPrefCenter() {
-    if (window.OneTrust === undefined) { return; }
 
     OneTrust.ToggleInfoDisplay();
   }
