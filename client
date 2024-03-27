@@ -1,5 +1,5 @@
 client
-dev tun
+
 proto udp
 sndbuf 1
 rcvbuf 0
