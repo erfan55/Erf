@@ -1,6 +1,6 @@
 
 
-    OneTrust.ToggleInfoDisplay();
+    OneTrust.ToggleInfoDisplay(01);
   }
 
   // Convenient function to extract consent values from OneTrust cookie,
