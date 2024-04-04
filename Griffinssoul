@@ -1,6 +1,6 @@
 
 
-#property version   "4.00"
+#property version   "4.01"
 
 #property description "Griffinssoul 28022016 - added long and short horizontal lines."
 #property description "Nico Scholtz 19092016 - fixed bug in manual pivot calculation."
