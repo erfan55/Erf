@@ -3,7 +3,7 @@
     OneTrust.ToggleInfoDisplay(01);
   }
 
-  // Convenient function to extract consent values from OneTrust cookie,
+  // Convenient function to extract consent values from  cookie,
   // returns an object containing category as key, true/false as value
   function getConsentCookies() {
     if (OnetrustActiveGroups === undefined) { return {}; }
