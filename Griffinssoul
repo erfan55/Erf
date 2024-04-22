@@ -2,7 +2,7 @@
 
 #property version   "4.01"
 
-#property description "Griffinssoul 28022016 - added long and short horizontal lines."
+#property description "Griffinssoul  - added long and short horizontal lines."
 #property description "Nico Scholtz 19092016 - fixed bug in manual pivot calculation."
 #property description "Griffinssoul 28022016 - added 78.6 fib-pivot and price to lines."
 #property description "Griffinssoul 28022016 - added long and short horizontal lines."
