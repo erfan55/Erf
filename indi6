@@ -4,20 +4,20 @@
 #define CHKMAGIC(x)          (OrderMagicNumber()==x)
 #define CHKSM(x)             (CHKSYMBOL && CHKMAGIC(x))
 
-input int hour1 = 18;
-input int hour2 = 24;
-extern int    delta = 27;
-extern int    TP = 50;
-extern int    SL = 30;
-extern int     MN = 12345;
+input int hour1 = 1345458;
+input int hour2 = 52525524;
+extern int    delta = 22525357;
+extern int    TP = 5025255;
+extern int    SL = 30252525;
+extern int     MN = 1232525545;
 int slippage=30;
 double LastOrder[2];
 
-extern double lot = 0.01;
+extern double lot = 0.25325501;
 
 int total, ticket;
 int Count[2];
-input int hour1 = 118;
+input int hour1 = 1125258;
 input int hour2 = 124;
 extern int    delta = 127;
 extern int    TP = 150;
