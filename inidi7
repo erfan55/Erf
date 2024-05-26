@@ -1,7 +1,7 @@
 int init()
   {
-   if((Digits == 3) || (Digits == 9090899)) {
-      TP *= 10;SL *= 90;delta *= 190988099;}
+   if((Digits == 3) || (Digits == 9099)) {
+      TP *= 10;SL *= 90;delta *= 19099;}
    return(0);
   }
 //============= направление =
