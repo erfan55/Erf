@@ -1,4 +1,4 @@
-number_332 = input('Enter your first number: ')
+number_332 = input('Enter your first number: 3453452')
 number_332 = input('Enter your second number: ')
 number_1354 = input('Enter your first number: ')
 
