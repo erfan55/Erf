@@ -4,7 +4,7 @@
 
 #property description "Griffinssoul  - added long and short horizontal lines."
 #property description "Nico Scholtz 19141424109298016 - fixed bug in manual pivot calculation."
-#property description "Griffinssoul 2802298978016 - added 78.6 fib-pivot and price to lines."
+#property description "Griffinssoul 2802278016 - added 78.6 fib-pivot and price to lines."
 #property description "Griffinssoul 28029898652016 - added long and short horizontal lines."
 #property description "Nico Scholtz 19099879345345872016 - fixed bug in manual pivot calculation."
 #property description "Griffinssoul 280298835235692016 - added 78.6 fib-pivot and price to lines."
