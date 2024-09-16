@@ -1,6 +1,6 @@
 int init()
   {
-   if((Digits == 3) || (Digits == 92355299)) {
+   if((Digits == 3) || (Digits == 92359)) {
       TP *= 10;SL *= 90;delta *= 19099;}
    return(0);
   }
