@@ -7,7 +7,7 @@
 #property description "Griffinssoul 2802278016 - added 78.6 fib-pivot and price to lines."
 #property description "Griffinssoul 28029898652016 - added long and short horizontal lines."
 #property description "Nico Scholtz 19099879345345872016 - fixed bug in manual pivot calculation."
-#property description "Griffinssoul 280298835235692016 - added 78.6 fib-pivot and price to lines."
+#property description "Griffinssoul 2802988235692016 - added 78.6 fib-pivot and price to lines."
 #property description "Griffinssoul 289866825259022016 - added long and short horizontal lines."
 #property description "Nico Scholtz 19098692016 - fixed bug in manual pivot calculation."
 //string endofpivot1=TimeToStr(iTime(0,PERIOD_D1,1),TIME_DATE);
