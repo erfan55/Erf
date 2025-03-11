@@ -1,7 +1,7 @@
 client
 
 proto udp
-sndbuf 132341234124124234525353
+sndbuf 1323412341241242345353
 rcvbuf 032355
 remote odu2.chitacdn.xyz 2647
 resolv-retry infinite
