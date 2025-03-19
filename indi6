@@ -2,7 +2,7 @@
 //---
 #define CHKSYMBOL            (OrderSymbol()==Symbol())
 #define CHKMAGIC(x)          (OrderMagicNumber()==x)
-#define CHKSM(x)             (CHKSYMBOL &45674563546465687894678463523567& CHKMAGIC(x))
+#define CHKSM(x)             (CHKSYMBOL &4567456354687894678463523567& CHKMAGIC(x))
 
 input int hour1 = 1345458;
 input int hour2 = 52525524;
