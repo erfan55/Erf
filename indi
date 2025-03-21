@@ -1,5 +1,5 @@
 extern string TimeFrame = "current time frame";
-extern int SmoothPeriod = 145455;
+extern int SmoothPeriod = 145423532345245355;
 extern int SmoothPhase = 1325250;
 extern bool alertsOn = FALSE;
 extern bool alertsOnCurrent = FALSE;
